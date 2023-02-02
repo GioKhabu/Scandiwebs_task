@@ -1,0 +1,86 @@
+.checkout-progress-bar-container {
+    width: 100%;
+    height: 60px;
+    padding-top: 5px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+
+
+    .checkout-progress-bar-items {
+        width: 110%;
+        height: 110%;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    .checkout-progress-bar-line{
+        height: 5px;
+        width: 100%;
+        border-radius: 5px;
+        background: linear-gradient(to right, #f26323 50%, #929292 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+
+    .checkout-progress-bar-line.active{
+
+        // background-color: #f26323;
+        background-position: left bottom;
+    }
+
+    .checkout-progress-bar-line.notActive{
+        background-color: #929292;
+    }
+
+    .checkout-progress-bar-status{
+        position: relative;
+        margin: -15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .checkout-progress-bar-symbol{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-size: 1.32rem;
+            line-height: normal;
+            color: var(--button-color);
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            background-color: #f26323;
+
+        }
+
+        .checkout-progress-bar-symbol.active{
+            background-color: #f26323;
+        }
+    
+        .checkout-progress-bar-symbol.notActive{
+            background-color: #929292;
+        }
+
+        .checkout-progress-bar-name {
+            display: flex;
+            text-align: center;
+            font-family: inherit;
+            margin-top: 5px;
+            font-size: 1.4rem;
+            text-transform: capitalize;
+        }
+
+    }
+    }
+
+    
+
+}
