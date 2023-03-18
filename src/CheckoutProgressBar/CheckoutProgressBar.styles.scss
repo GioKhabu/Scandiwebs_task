@@ -23,12 +23,10 @@
         background: linear-gradient(to right, #f26323 50%, #929292 50%);
         background-size: 200% 100%;
         background-position: right bottom;
-        transition: all .5s ease-out;
+        transition: all 1s ease-out;
     }
 
     .checkout-progress-bar-line.active{
-
-        // background-color: #f26323;
         background-position: left bottom;
     }
 
